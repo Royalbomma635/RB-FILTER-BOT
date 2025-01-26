@@ -672,7 +672,7 @@ async def delete(bot, message):
         unwanted_chars = ['[', ']', '(', ')']
         for char in unwanted_chars:
             file_name = file_name.replace(char, '')
-        file_name = ' '.join(filter(lambda x: not x.startswith('@'), file_name.split()))
+        file_name = 'ROYALBOMMA '.join(filter(lambda x: not x.startswith('@'), file_name.split()))
     
         result = col.delete_many({
             'file_name': file_name,
